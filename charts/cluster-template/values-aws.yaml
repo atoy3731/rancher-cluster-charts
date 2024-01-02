@@ -73,6 +73,9 @@ nodepools:
 
   # Encrypt the EBS volume using the AWS Managed CMK
   encryptEbsVolume: false
+
+  # KMS Key ID (only applicable if encryptEbsVolume is 'true')
+  kmsKey: ""
   
   # Optional endpoint URL (hostname only or fully qualified)
   endpoint: ""

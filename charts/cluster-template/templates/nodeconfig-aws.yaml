@@ -16,6 +16,11 @@ deviceName: {{ $nodepool.deviceName }}
 {{- end }}
 {{- if $nodepool.encryptEbsVolume }}
 encryptEbsVolume: {{ $nodepool.encryptEbsVolume }}
+{{- if $nodepool.kmsKey }}
+kmsKey: {{ $nodepool.kmsKey | quote }}
+{{- else }}
+{{- fail "Value for $nodepool.kmsKey required if encryptEbsVolume is true" }}
+{{- end }}
 {{- end }}
 {{- if $nodepool.endpoint }}
 endpoint: {{ $nodepool.endpoint }}
@@ -130,6 +135,11 @@ common:
 {{- end }}
 {{- if $nodepool.encryptEbsVolume }}
 encryptEbsVolume: {{ $nodepool.encryptEbsVolume }}
+{{- if $nodepool.kmsKey }}
+kmsKey: {{ $nodepool.kmsKey | quote }}
+{{- else }}
+{{- fail "Value for $nodepool.kmsKey required if encryptEbsVolume is true" }}
+{{- end }}
 {{- end }}
 {{- if $nodepool.endpoint }}
 endpoint: {{ $nodepool.endpoint }}
