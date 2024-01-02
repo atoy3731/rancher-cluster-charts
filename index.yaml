@@ -5,6 +5,17 @@ entries:
       catalog.cattle.io/namespace: fleet-default
       catalog.cattle.io/type: cluster-template
     apiVersion: v1
+    created: "2024-01-02T23:59:59.025472919Z"
+    description: Cluster template for rke2
+    digest: acde7081a28beea31c6f1ad5fb8d713b01e19bdddf43aa57872cd949264782ba
+    name: cluster-template
+    urls:
+    - https://github.com/atoy3731/cluster-charts/releases/download/cluster-template-0.0.9/cluster-template-0.0.9.tgz
+    version: 0.0.9
+  - annotations:
+      catalog.cattle.io/namespace: fleet-default
+      catalog.cattle.io/type: cluster-template
+    apiVersion: v1
     created: "2024-01-02T23:46:43.325150548Z"
     description: Cluster template for rke2
     digest: d10effc50f347657b6d0f5a2be9997567b09b399d2d7de5edf5cbb921914c198
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/atoy3731/cluster-charts/releases/download/cluster-template-0.0.8/cluster-template-0.0.8.tgz
     version: 0.0.8
-generated: "2024-01-02T23:46:43.325161148Z"
+generated: "2024-01-02T23:59:59.025485302Z"
